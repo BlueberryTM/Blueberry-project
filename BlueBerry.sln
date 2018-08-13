@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueBerry", "BlueBerry\BlueBerry.csproj", "{3CD308FE-24A8-4B12-B791-E3C67AC614E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CD308FE-24A8-4B12-B791-E3C67AC614E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CD308FE-24A8-4B12-B791-E3C67AC614E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CD308FE-24A8-4B12-B791-E3C67AC614E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CD308FE-24A8-4B12-B791-E3C67AC614E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B30B4F80-A981-466F-BB51-C80EB1445351}
+	EndGlobalSection
+EndGlobal
