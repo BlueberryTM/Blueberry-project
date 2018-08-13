@@ -18,12 +18,10 @@ namespace BlueBerry
 			InitializeComponent();
 		}
 
+        public Form RefToForm4 { get; set; }
+        public CheckBox refToCheckBox { get; set; }
+
 		private void label1_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void axAcroPDF1_Enter(object sender, EventArgs e)
 		{
 
 		}
@@ -35,12 +33,9 @@ namespace BlueBerry
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			
+            RefToForm4.Show();
+            refToCheckBox.Checked = true;
+            this.Close();
 		}
-
-		private void axAcroPDF1_Enter_1(object sender, EventArgs e)
-		{
-			
-		}
-	}
+    }
 }
