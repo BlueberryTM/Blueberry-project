@@ -30,16 +30,7 @@ namespace BlueBerry
 
 		private void Form5_Load(object sender, EventArgs e)
 		{
-			axAcroPDF1.LoadFile(@"D:\Programing\BlueBerry\Welcome to Blueberry.pdf");
-			axAcroPDF1.src = @"D:\Programing\BlueBerry\Welcome to Blueberry.pdf";
-			axAcroPDF1.setShowToolbar(false);
-			axAcroPDF1.Show();
-
-
-			
-			
-
-
+			richTextBox1.LoadFile(@"D:\Programing\BlueBerry\Welcome to Blueberry.rtf");
 		}
 
 		private void button1_Click(object sender, EventArgs e)

@@ -32,9 +32,8 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.button1 = new System.Windows.Forms.Button();
-			this.axAcroPDF1 = new AxAcroPDFLib.AxAcroPDF();
+			this.richTextBox1 = new System.Windows.Forms.RichTextBox();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -70,15 +69,17 @@
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
-			// axAcroPDF1
+			// richTextBox1
 			// 
-			this.axAcroPDF1.Enabled = true;
-			this.axAcroPDF1.Location = new System.Drawing.Point(12, 79);
-			this.axAcroPDF1.Name = "axAcroPDF1";
-			this.axAcroPDF1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF1.OcxState")));
-			this.axAcroPDF1.Size = new System.Drawing.Size(776, 328);
-			this.axAcroPDF1.TabIndex = 4;
-			this.axAcroPDF1.Enter += new System.EventHandler(this.axAcroPDF1_Enter_1);
+			this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.richTextBox1.Location = new System.Drawing.Point(12, 79);
+			this.richTextBox1.Name = "richTextBox1";
+			this.richTextBox1.ReadOnly = true;
+			this.richTextBox1.Size = new System.Drawing.Size(776, 328);
+			this.richTextBox1.TabIndex = 4;
+			this.richTextBox1.Text = "";
 			// 
 			// Form5
 			// 
@@ -86,7 +87,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.MidnightBlue;
 			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Controls.Add(this.axAcroPDF1);
+			this.Controls.Add(this.richTextBox1);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.label1);
@@ -96,7 +97,6 @@
 			this.Text = "Blueberry";
 			this.Load += new System.EventHandler(this.Form5_Load);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -107,6 +107,6 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Button button1;
-		protected internal AxAcroPDFLib.AxAcroPDF axAcroPDF1;
+		private System.Windows.Forms.RichTextBox richTextBox1;
 	}
 }
