@@ -33,6 +33,8 @@ namespace BlueBerry
 		{
 			Form5 frm5 = new Form5();
 			frm5.Show();
+            frm5.RefToForm4 = this;
+            frm5.refToCheckBox = this.checkBox1;
 			this.Hide();
 		}
 
