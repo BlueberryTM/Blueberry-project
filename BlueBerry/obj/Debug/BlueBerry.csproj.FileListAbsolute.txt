@@ -12,11 +12,7 @@ D:\Programing\BlueBerry\BlueBerry\BlueBerry\obj\Debug\BlueBerry.pdb
 D:\Programing\BlueBerry\BlueBerry\BlueBerry\obj\Debug\BlueBerry.Form3.resources
 D:\Programing\BlueBerry\BlueBerry\BlueBerry\obj\Debug\BlueBerry.Form4.resources
 D:\Programing\BlueBerry\BlueBerry\BlueBerry\bin\Debug\itextsharp.dll
-D:\Programing\BlueBerry\BlueBerry\BlueBerry\bin\Debug\Interop.AcroPDFLib.dll
-D:\Programing\BlueBerry\BlueBerry\BlueBerry\bin\Debug\AxInterop.AcroPDFLib.dll
-D:\Programing\BlueBerry\BlueBerry\BlueBerry\obj\Debug\Interop.AcroPDFLib.dll
 D:\Programing\BlueBerry\BlueBerry\BlueBerry\obj\Debug\Interop.FileViewLib.dll
-D:\Programing\BlueBerry\BlueBerry\BlueBerry\obj\Debug\AxInterop.AcroPDFLib.dll
 D:\Programing\BlueBerry\BlueBerry\BlueBerry\obj\Debug\BlueBerry.csproj.ResolveComReference.cache
 D:\Programing\BlueBerry\BlueBerry\BlueBerry\obj\Debug\BlueBerry.Form5.resources
 D:\Programing\BlueBerry\BlueBerry\BlueBerry\obj\Debug\BlueBerry.csproj.CopyComplete
