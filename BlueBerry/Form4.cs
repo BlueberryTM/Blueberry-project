@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace BlueBerry
 {
 	public partial class Form4 : Form
@@ -55,7 +56,63 @@ namespace BlueBerry
 
 		private void button1_Click(object sender, EventArgs e)
 		{
+			SqlConnection cn = new SqlConnection("Data Source=DESKTOP-NC0DTSG;Initial Catalog=bluberrylogin2;Integrated Security=True");
+			cn.Open();
+
+			string newcom = "insert into users2 (name,email,password,phone) VALUES ('" + namesu.Text + "','" + emailsu.Text + "','" + passwordsu.Text + "','" + phonesu.Text + "')";
+
+			SqlCommand cmd = new SqlCommand(newcom, cn);
+
+			cmd.ExecuteNonQuery();
+
+			MessageBox.Show("Welcome to Blueberry");
+			this.Hide();
+
+			Form2 form2 = new Form2();
+			form2.Show();
+			
+
+
 
 		}
-	}
+
+		private void passwordsu_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label4_Click(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
+
+		private void label5_Click(object sender, EventArgs e)
+		{
+			if (WindowState == FormWindowState.Normal)
+			{
+				WindowState = FormWindowState.Minimized;
+			}
+		}
+
+		private void label2_Click(object sender, EventArgs e)
+		{
+			label4.Show();
+			label5.Show();
+			label1.Show();
+			label2.Hide();
+
+			FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+		}
+
+		private void label1_Click(object sender, EventArgs e)
+		{
+			label5.Hide();
+			label4.Hide();
+			label1.Hide();
+			label2.Show();
+
+			FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+		}
+	}   
+	
 }

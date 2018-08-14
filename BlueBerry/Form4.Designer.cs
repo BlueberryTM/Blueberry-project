@@ -36,12 +36,12 @@
 			this.label5 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.namesu = new System.Windows.Forms.TextBox();
+			this.emailsu = new System.Windows.Forms.TextBox();
 			this.label8 = new System.Windows.Forms.Label();
-			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.passwordsu = new System.Windows.Forms.TextBox();
 			this.label9 = new System.Windows.Forms.Label();
-			this.textBox4 = new System.Windows.Forms.TextBox();
+			this.phonesu = new System.Windows.Forms.TextBox();
 			this.label10 = new System.Windows.Forms.Label();
 			this.button1 = new System.Windows.Forms.Button();
 			this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -60,6 +60,7 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "↑";
 			this.label1.Visible = false;
+			this.label1.Click += new System.EventHandler(this.label1_Click);
 			// 
 			// label2
 			// 
@@ -71,6 +72,7 @@
 			this.label2.Size = new System.Drawing.Size(18, 23);
 			this.label2.TabIndex = 1;
 			this.label2.Text = "↓";
+			this.label2.Click += new System.EventHandler(this.label2_Click);
 			// 
 			// label3
 			// 
@@ -94,6 +96,7 @@
 			this.label4.TabIndex = 3;
 			this.label4.Text = "X";
 			this.label4.Visible = false;
+			this.label4.Click += new System.EventHandler(this.label4_Click);
 			// 
 			// label5
 			// 
@@ -106,6 +109,7 @@
 			this.label5.TabIndex = 4;
 			this.label5.Text = "_";
 			this.label5.Visible = false;
+			this.label5.Click += new System.EventHandler(this.label5_Click);
 			// 
 			// label6
 			// 
@@ -129,19 +133,19 @@
 			this.label7.TabIndex = 6;
 			this.label7.Text = "Name :";
 			// 
-			// textBox1
+			// namesu
 			// 
-			this.textBox1.Location = new System.Drawing.Point(93, 100);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(175, 20);
-			this.textBox1.TabIndex = 7;
+			this.namesu.Location = new System.Drawing.Point(93, 100);
+			this.namesu.Name = "namesu";
+			this.namesu.Size = new System.Drawing.Size(175, 20);
+			this.namesu.TabIndex = 7;
 			// 
-			// textBox2
+			// emailsu
 			// 
-			this.textBox2.Location = new System.Drawing.Point(93, 146);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(175, 20);
-			this.textBox2.TabIndex = 9;
+			this.emailsu.Location = new System.Drawing.Point(93, 146);
+			this.emailsu.Name = "emailsu";
+			this.emailsu.Size = new System.Drawing.Size(175, 20);
+			this.emailsu.TabIndex = 9;
 			// 
 			// label8
 			// 
@@ -154,12 +158,13 @@
 			this.label8.TabIndex = 8;
 			this.label8.Text = "E-mail :";
 			// 
-			// textBox3
+			// passwordsu
 			// 
-			this.textBox3.Location = new System.Drawing.Point(93, 196);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(175, 20);
-			this.textBox3.TabIndex = 11;
+			this.passwordsu.Location = new System.Drawing.Point(93, 196);
+			this.passwordsu.Name = "passwordsu";
+			this.passwordsu.Size = new System.Drawing.Size(175, 20);
+			this.passwordsu.TabIndex = 11;
+			this.passwordsu.TextChanged += new System.EventHandler(this.passwordsu_TextChanged);
 			// 
 			// label9
 			// 
@@ -172,12 +177,12 @@
 			this.label9.TabIndex = 10;
 			this.label9.Text = "Password :";
 			// 
-			// textBox4
+			// phonesu
 			// 
-			this.textBox4.Location = new System.Drawing.Point(93, 241);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(175, 20);
-			this.textBox4.TabIndex = 13;
+			this.phonesu.Location = new System.Drawing.Point(93, 241);
+			this.phonesu.Name = "phonesu";
+			this.phonesu.Size = new System.Drawing.Size(175, 20);
+			this.phonesu.TabIndex = 13;
 			// 
 			// label10
 			// 
@@ -245,13 +250,13 @@
 			this.Controls.Add(this.linkLabel1);
 			this.Controls.Add(this.checkBox1);
 			this.Controls.Add(this.button1);
-			this.Controls.Add(this.textBox4);
+			this.Controls.Add(this.phonesu);
 			this.Controls.Add(this.label10);
-			this.Controls.Add(this.textBox3);
+			this.Controls.Add(this.passwordsu);
 			this.Controls.Add(this.label9);
-			this.Controls.Add(this.textBox2);
+			this.Controls.Add(this.emailsu);
 			this.Controls.Add(this.label8);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.namesu);
 			this.Controls.Add(this.label7);
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.label5);
@@ -261,6 +266,7 @@
 			this.Controls.Add(this.label1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.MaximizeBox = false;
 			this.Name = "Form4";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Blueberry  |   SIGNUP";
@@ -279,12 +285,12 @@
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.TextBox namesu;
+		private System.Windows.Forms.TextBox emailsu;
 		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.TextBox textBox3;
+		private System.Windows.Forms.TextBox passwordsu;
 		private System.Windows.Forms.Label label9;
-		private System.Windows.Forms.TextBox textBox4;
+		private System.Windows.Forms.TextBox phonesu;
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.CheckBox checkBox1;

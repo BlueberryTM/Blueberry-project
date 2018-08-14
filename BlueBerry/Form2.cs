@@ -135,7 +135,8 @@ namespace BlueBerry
 				toolTip1.SetToolTip(label8, "Caps Lock is ON !");
 				label8.Show();
 
-			} else
+			}
+			else
 			{
 				label8.Hide();
 			}
@@ -150,7 +151,8 @@ namespace BlueBerry
 			{
 				email.BackColor = Color.LightPink;
 				toolTip3.SetToolTip(email, "Please enter a Valid E-Mail !");
-			} else
+			}
+			else
 			{
 				email.BackColor = Color.Empty;
 			}
@@ -159,7 +161,8 @@ namespace BlueBerry
 				email.BackColor = Color.LightPink;
 				MessageBox.Show("Please enter a valid E-Mail", "Error", MessageBoxButtons.OK);
 				email.Focus();
-			} else
+			}
+			else
 			{
 				email.BackColor = Color.Empty;
 			}
@@ -181,21 +184,24 @@ namespace BlueBerry
 			SqlConnection cn = new SqlConnection("Data Source=DESKTOP-NC0DTSG;Initial Catalog=bluberrylogin2;Integrated Security=True");
 			cn.Open();
 
-			SqlCommand cmd = new SqlCommand("select * from users2 where email = '"+email.Text+"' and password ='"+Password.Text+"'", cn);
+			SqlCommand cmd = new SqlCommand("select * from users2 where email = '" + email.Text + "' and password ='" + Password.Text + "'", cn);
 			SqlDataReader dr;
 			dr = cmd.ExecuteReader();
 			int count = 0;
 			while (dr.Read())
+		
+
 			{
 				count += 1;
 			}
 			if (count == 1)
 			{
-				MessageBox.Show(" Welcome Back, ");
+				MessageBox.Show(" Welcome Back,");
 				Form3 f3 = new Form3();
 				f3.Show();
 				this.Hide();
-			} else if (count > 0)
+			}
+			else if (count > 0)
 			{
 				MessageBox.Show(" The email and password already exist !");
 			}
@@ -204,9 +210,9 @@ namespace BlueBerry
 				MessageBox.Show(" email or Password are Wrong. if you forgot your email or password, please contact with Blueberry Team ");
 			}
 
-		
-			
-         }
+
+
+		}
 
 		private void label11_Click(object sender, EventArgs e)
 		{
@@ -221,10 +227,11 @@ namespace BlueBerry
 		private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
 			Form4 fr4 = new Form4();
-				fr4.Show();
+			fr4.Show();
 			this.Hide();
 		}
-	}
+
+	}	
 
 }
 
